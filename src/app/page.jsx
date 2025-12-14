@@ -1,5 +1,13 @@
+import { Button } from "@/components/ui/button";
 import Navbar from "./components/Navbar/Navbar";
 import ProfileImage from "./components/ProfileImage/ProfileImage";
+import { IoDocument, IoDocumentAttach, IoDocumentAttachOutline, IoDocumentOutline, IoDownload, IoDownloadOutline } from "react-icons/io5";
+import { HardDriveDownload } from "lucide-react";
+import { DownloadCloud } from "lucide-react";
+import { Github } from "lucide-react";
+import { GithubIcon } from "lucide-react";
+import { Linkedin } from "lucide-react";
+import ProfileInfo from "./components/ProfileInfo/ProfileInfo";
 
 export default function Home() {
   return (
@@ -8,14 +16,10 @@ export default function Home() {
       <section>
         <div className="flex items-center gap-12">
           <ProfileImage />
-          <div>
-            <p className="text-xl">
-              Merhaba, ben <b>Gökay Baz</b>. <br />
-              BT altyapısı, sistem yönetimi ve yazılım geliştirme alanlarında çalışan bir <br /> <b>IT Uzmanı & Junior DevOps Engineer’ım.</b> <br /> Kurumsal sistemler, ERP entegrasyonlu web uygulamaları ve otomasyon çözümleri geliştiriyor; DevOps yolculuğumda modern teknolojileri sahada deneyimleyerek ilerliyorum.
-            </p>
-          </div>
+          <ProfileInfo />
         </div>
       </section>
+      <hr />
     </div>
   );
 }
